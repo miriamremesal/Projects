@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>List Manager</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+ <!-- NABVAR -->
+ <nav class="navbar navbar-expand-lg bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-light" href="#"><h1>ENJOY LEARN</h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5501/index.html">WHEEL OF FORTUNE</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              OUR COMPANY
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="about.html">Business</a></li>
+              <li><a class="dropdown-item" href="team.html">Equipment</a></li>
+              <li><a class="dropdown-item" href="project.html">Projects</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">
+              SERVICES
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">CONTACT US</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+          <button class="btn btn-outline-secondary border-light text-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+
+    <h3 id="title">LIST MANAGER</h3>
+    <p id="description">With this application you can manage the lists for your educational equipment.</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <form class="needs-validation" novalidate>
+        <div class="form-row">
+
+
+            <!-- <form>
+                <label for="field1">Enter a value:</label><br>
+                <input type="text" id="field1" name="field1"><br>
+                <label for="field2">Enter another value:</label><br>
+                <input type="text" id="field2" name="field2"><br>
+                <button type="button" onclick="addValues()">Add</button>
+            </form> -->
+        
+            
+
+
+            <!-- NOMBRE -->
+            <div class="col-md-3 mb-3">
+                <label id="name-label" for="validationCustom01">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" name="first-name" placeholder="First name"
+                    minlength="2" maxlength="20" required />
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a valid name.
+                </div>
+            </div>
+
+            <!-- APELLIDOS -->
+            <div class="col-md-3 mb-3">
+                <label id="last-name-label" for="validationCustom02">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" name="last-name" placeholder="Last name"
+                    minlength="2" maxlength="30" required />
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a valid last name.
+                </div>
+            </div>
+
+            <!-- CIUDAD -->
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom03">City</label>
+                <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+
+            <!-- TELEFONO DE CONTACTO -->
+            <div class="col-md-3 mb-3">
+                <label for="validationCustom04">Phone number</label>
+                <input type="text" pattern="[0-9]*" class="form-control" id="validationCustom04"
+                    placeholder="Phone number" minlength="9" maxlength="9" required>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a valid phone number.
+                </div>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="col-md-3 mb-3">
+                <label id="email-label" for="validationCustom05">Email</label>
+                <input type="email" class="form-control" id="validationCustom05" name="email" placeholder="Email"
+                    required />
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide a valid email.
+                </div>
+            </div>
+
+            <!-- NOMBRE DE USUARIO -->
+            <div class="col-md-3 mb-3">
+                <label id="username-label" for="validationCustom06">Username</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="validationCustom06" placeholder="Minimum 4 characters"
+                        aria-describedby="inputGroupPrepend" pattern="[a-z0-9]{4,}" required />
+
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTRASEÑA -->
+            <div class="col-md-3 mb-3">
+                <label id="password-label" for="validationCustom07">Password</label>
+                <input type="password" class="form-control" id="validationCustom07" name="new-password"
+                    placeholder="Minimum 8 characters" pattern="[a-z0-9]{8,}" required />
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please choose a password.
+                </div>
+            </div>
+
+            <!-- DESPLEGABLE EDADES -->
+            <div class="col-md-3 mb-3">
+                <label id="age-label" for="validationCustom08">Age
+                    <select id="dropdown" class="form-control" id="validationCustom08" name="age" required>
+                        <option value="">(select a range)</option>
+                        <option value="1">Childish</option>
+                        <option value="2">Cadet</option>
+                        <option value="3">Youth</option>
+                    </select>
+
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a range.
+                    </div>
+                </label>
+            </div>
+
+            <!-- TEXT BOX que solo admita caracteres alfa numéricos -->
+            <label for="observations">Observations</label>
+            <p>
+                <textarea id="observations" rows="5" cols="55"
+                    placeholder="Only letters (upper and lower case) and numbers are allowed." pattern="[A-Za-z0-9]"
+                    maxlength="200">
+                </textarea>
+            </p>
+            </label>
+
+            <!-- CHECKBOX DAR DE ALTA -->
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Discharge the student.
+                    </label>
+                    <div class="invalid-feedback">
+                        You must have checked that the data entered is correct and register the student before
+                        submitting.
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <!-- ACCESO A UNA SEGUNDA PAGINA WEB -->
+            <p>
+                <label for="access-another-web" name="access-another-web">
+                    Access to a second <a href="https://factoriaf5.org/">website</a>.
+                </label>
+            </p>
+
+            <br>
+
+            <!-- BOTONES SUBMIT Y RESET -->
+            <div style="margin-bottom: 80px; margin-left: 70px;">
+
+                <!-- BOTON INSERTAR ESTUDIANTE -->
+                <button id="add" class="btn btn-danger" type="add" onclick="addValues()">INSERT</button>
+
+                <!-- BOTON ENVIAR FORMULARIO -->
+                <input id="submit" class="btn btn-danger" type="submit" value="SUBMIT" />
+                <!-- <p> <button class="btn btn-primary" type="submit">Submit</button> </p> -->
+
+                <!-- BOTON RESTABLECER, BORRAR TODO -->
+                <input id="reset" class="btn btn-danger" type="reset" value="RESET" />
+
+            </div>
+
+        </div>
+
+    </form>
+
+    <div class="table-responsive">
+    <table class="table table-dark" id="table">
+        <tr>
+            <th>POSITION</th>
+            <th>NAME</th>
+            <th>LAST NAME</th>
+            <th>CITY</th>
+            <th>PHONE NUMBER</th>
+            <th>EMAIL</th>
+            <th>USERNAME</th>
+            <!-- <th>PASSWORD</th> -->
+            <!-- <th>AGE</th> -->
+            <th>DELETE</th>
+            
+        </tr>
+    </table>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>

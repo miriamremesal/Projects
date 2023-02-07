@@ -1,0 +1,32 @@
+body {
+    display: block;
+    position: relative;
+}
+
+table {
+    
+    /* width: 500px;
+    height: 500px; */
+    border: 1px solid black;
+    /* overflow: auto; */
+}
+
+/* Navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(185, 0, 0), rgb(255, 24, 24));
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: black !important;
+}

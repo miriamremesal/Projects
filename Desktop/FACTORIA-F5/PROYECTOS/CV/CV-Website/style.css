@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'Economica';
+    src: url(./font-families/Economica/Economica-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* * { outline: 1px solid black; } */
+
+#Nombre {
+    font-size: 55px;
+}
+
+body {
+    font-family: 'Economica';
+    color: black;
+    background-color: rgba(0, 162, 255, 0.318);
+}
+
+header,
+section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(0, 149, 255, 0.562);
+    color: black;
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.cajas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.caja1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.caja2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#Telefono {
+    display: flex;
+    align-items: center;
+}
+
+#Email {
+    display: flex;
+    align-items: center;
+}
+
+#Linkedin {
+    display: flex;
+    align-items: center;
+}
+
+#Coche {
+    display: flex;
+    align-items: center;
+}
+
+#Disponibilidad {
+    display: flex;
+    align-items: center;
+}
+
+#Incorporacion {
+    display: flex;
+    align-items: center;
+}
+
+article {
+    width: 50%;
+}
+
+#foto {
+    border-radius: 50%;
+    height: 200px;
+    width: 150px;
+    margin-right: 16px;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: rgb(0, 0, 114);
+}
+
+#LengYHerr {
+    display: inline;
+}
+
+progress {
+    margin-left: 8px;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* rgba(255, 192, 203, 0.811) */
+/* rgb(132, 0, 255) */
